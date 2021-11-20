@@ -1,0 +1,28 @@
+<mat-card>
+  <mat-card-title>Novo Cadastro</mat-card-title>
+  <form>
+      <mat-form-field>
+          <input matInput placeholder="Nome"
+              [(ngModel)]="payment.nome" name="nome">
+      </mat-form-field>
+      <mat-form-field>
+          <input matInput placeholder="Aniversário"
+              [(ngModel)]="payment.aniversario" name="aniversario">
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput placeholder="Email"
+            [(ngModel)]="payment.email" name="email">
+    </mat-form-field>
+    <mat-form-field>
+        <input matInput placeholder="Telefone"
+            [(ngModel)]="payment.telefone" name="telefone">
+    </mat-form-field>
+  </form>
+  <button mat-raised-button (click)="createPayment()" color="primary">
+      Salvar
+  </button>
+  
+  <button mat-raised-button (click)="cancel()">
+      Cancelar
+  </button>
+</mat-card>
