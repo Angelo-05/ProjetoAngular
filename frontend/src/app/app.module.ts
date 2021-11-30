@@ -21,11 +21,11 @@ import { UsuarioCreateComponent } from "./components/usuario/usuario-create/usua
 import { MatButtonModule } from "@angular/material/button";
 import { MatSnackBarModule } from "@angular/material/snack-bar";
 import { HttpClientModule } from "@angular/common/http";
-import { FormsModule} from '@angular/forms';
-import { MatFormFieldModule} from '@angular/material/form-field';
-import { MatInputModule } from '@angular/material/input';
-import { UsuarioReadComponent } from './components/usuario/usuario-read/usuario-read.component';
-import { MatTableModule } from '@angular/material/table';
+import { FormsModule } from "@angular/forms";
+import { MatFormFieldModule } from "@angular/material/form-field";
+import { MatInputModule } from "@angular/material/input";
+import { UsuarioReadComponent } from "./components/usuario/usuario-read/usuario-read.component";
+import { MatTableModule } from "@angular/material/table";
 import { MatPaginatorModule } from "@angular/material/paginator";
 import { MatSortModule } from "@angular/material/sort";
 import { UsuarioDeleteComponent } from './components/usuario/usuario-delete/usuario-delete.component';

@@ -1,7 +1,7 @@
 import { Usuario } from "./../usuario.model";
 import { Router, ActivatedRoute } from "@angular/router";
 import { UsuarioService } from "./../usuario.service";
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from "@angular/core";
 
 @Component({
   selector: 'app-usuario-update',
@@ -15,15 +15,15 @@ export class UsuarioUpdateComponent implements OnInit {
     private usuarioService: UsuarioService,
     private router: Router,
     private route: ActivatedRoute
-  ) { 
-    this.usuario = { nome: "", aniversario: "", email: "", telefone: 0 }
+  ) {
+    this.usuario = { nome: "", aniversario: "", email: "", telefone: 0 };
   }
 
   ngOnInit(): void {
     let id = this.route.snapshot.paramMap.get("id") || 0;
     id = +id;
-    this.usuarioService.readById(id).subscribe((this.usuario) => {
-      this.usuario = this.usuario;
+    this.usuarioService.readById(id).subscribe((usuario) => {
+      this.usuario = usuario;
     });
   }
 

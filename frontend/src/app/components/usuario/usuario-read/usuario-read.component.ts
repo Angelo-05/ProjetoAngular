@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Usuario } from '../usuario.model';
-import { UsuarioService } from '../usuario.service';
+import { UsuarioService } from './../usuario.service';
 
 @Component({
   selector: 'app-usuario-read',
@@ -9,9 +9,9 @@ import { UsuarioService } from '../usuario.service';
 })
 export class UsuarioReadComponent implements OnInit {
   usuarios: Usuario[];
-  displayedColumns = ["id", "nome", "aniversario", "telefone", "action"];
+  displayedColumns = ["id", "nome", "aniversario", "email", "telefone", "action"];
 
-  constructor(private usuarioService: UsuarioService) { 
+  constructor(private usuarioService: UsuarioService) {
     this.usuarios = [];
   }
 

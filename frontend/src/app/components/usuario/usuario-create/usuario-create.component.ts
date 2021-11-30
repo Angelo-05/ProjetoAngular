@@ -16,7 +16,7 @@ export class UsuarioCreateComponent implements OnInit {
     telefone: 0,
   };
 
-  constructor(private usuarioService: UsuarioService, private router: Router) { }
+  constructor(private usuarioService: UsuarioService, private router: Router) {}
 
   ngOnInit(): void {}
 

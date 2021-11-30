@@ -19,7 +19,7 @@ const routes: Routes = [
   },
   {
     path: "usuarios/create",
-    component: UsuarioCreateComponent ,
+    component: UsuarioCreateComponent,
   },
   {
     path: "usuarios/update/:id",

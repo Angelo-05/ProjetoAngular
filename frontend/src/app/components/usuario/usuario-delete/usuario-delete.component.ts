@@ -1,6 +1,6 @@
 import { Router, ActivatedRoute } from '@angular/router';
-import { UsuarioService } from '../usuario.service';
-import { Usuario } from '../usuario.model';
+import { UsuarioService } from './../usuario.service';
+import { Usuario } from './../usuario.model';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -15,7 +15,7 @@ export class UsuarioDeleteComponent implements OnInit {
     private usuarioService: UsuarioService,
     private router: Router,
     private route: ActivatedRoute
-  ) { 
+  ) {
     this.usuario = { nome: "", aniversario: "", email: "", telefone: 0 };
   }
 
