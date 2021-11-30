@@ -16,14 +16,20 @@ import { MatToolbarModule } from "@angular/material/toolbar";
 import { MatSidenavModule } from "@angular/material/sidenav";
 import { MatListModule } from "@angular/material/list";
 import { MatCardModule } from "@angular/material/card";
-import { PaymentComponent } from "./views/payment/payment.component";
-import { PaymentCreateComponent } from "./components/payment/payment-create/payment-create.component";
+import { UsuarioComponent } from "./views/usuario/usuario.component";
+import { UsuarioCreateComponent } from "./components/usuario/usuario-create/usuario-create.component";
 import { MatButtonModule } from "@angular/material/button";
 import { MatSnackBarModule } from "@angular/material/snack-bar";
 import { HttpClientModule } from "@angular/common/http";
 import { FormsModule} from '@angular/forms';
 import { MatFormFieldModule} from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
+import { UsuarioReadComponent } from './components/usuario/usuario-read/usuario-read.component';
+import { MatTableModule } from '@angular/material/table';
+import { MatPaginatorModule } from "@angular/material/paginator";
+import { MatSortModule } from "@angular/material/sort";
+import { UsuarioDeleteComponent } from './components/usuario/usuario-delete/usuario-delete.component';
+import { UsuarioUpdateComponent } from './components/usuario/usuario-update/usuario-update.component';
 
 @NgModule({
   declarations: [
@@ -32,8 +38,11 @@ import { MatInputModule } from '@angular/material/input';
     FooterComponent,
     NavComponent,
     HomeComponent,
-    PaymentComponent,
-    PaymentCreateComponent,
+    UsuarioComponent,
+    UsuarioCreateComponent,
+    UsuarioReadComponent,
+    UsuarioDeleteComponent,
+    UsuarioUpdateComponent,
   ],
   imports: [
     BrowserModule,
@@ -48,7 +57,10 @@ import { MatInputModule } from '@angular/material/input';
     HttpClientModule,
     FormsModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatSortModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

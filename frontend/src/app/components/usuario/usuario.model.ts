@@ -1,4 +1,4 @@
-export interface Payment {
+export interface Usuario {
   id?: number;
   nome: string;
   aniversario: string;

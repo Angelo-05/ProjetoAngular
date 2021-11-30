@@ -2,16 +2,16 @@ import { Component, OnInit } from "@angular/core";
 import { Router } from "@angular/router";
 
 @Component({
-  selector: "app-payment",
-  templateUrl: "./payment.component.html",
-  styleUrls: ["./payment.component.css"],
+  selector: "app-usuario",
+  templateUrl: "./usuario.component.html",
+  styleUrls: ["./usuario.component.css"],
 })
-export class PaymentComponent implements OnInit {
+export class UsuarioComponent implements OnInit {
   constructor(private router: Router) {}
 
   ngOnInit(): void {}
 
   navigateToProductCreate(): void {
-    this.router.navigate(["/payments/create"]);
+    this.router.navigate(["/usuarios/create"]);
   }
 }

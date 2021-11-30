@@ -3,8 +3,10 @@ import { RouterModule, Routes } from "@angular/router";
 
 //Importação dos componentes para conteúdo
 import { HomeComponent } from "./views/home/home.component";
-import { PaymentComponent } from "./views/payment/payment.component";
-import { PaymentCreateComponent } from "./components/payment/payment-create/payment-create.component";
+import { UsuarioComponent } from "./views/usuario/usuario.component";
+import { UsuarioCreateComponent } from "./components/usuario/usuario-create/usuario-create.component";
+import { UsuarioDeleteComponent } from "./components/usuario/usuario-delete/usuario-delete.component";
+import { UsuarioUpdateComponent } from "./components/usuario/usuario-update/usuario-update.component";
 
 const routes: Routes = [
   {
@@ -12,12 +14,20 @@ const routes: Routes = [
     component: HomeComponent,
   },
   {
-    path: "payments",
-    component: PaymentComponent,
+    path: "usuarios",
+    component: UsuarioComponent,
   },
   {
-    path: "payments/create",
-    component: PaymentCreateComponent ,
+    path: "usuarios/create",
+    component: UsuarioCreateComponent ,
+  },
+  {
+    path: "usuarios/update/:id",
+    component: UsuarioUpdateComponent,
+  },
+  {
+    path: "usuarios/delete/:id",
+    component: UsuarioDeleteComponent,
   },
 ];
 
